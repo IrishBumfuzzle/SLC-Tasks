@@ -1,6 +1,6 @@
 # Part 1
 
-## Part 
+## Part A
 
 > Try finding atleast 5 technical/UI-UX issues you feel in the clubs or life website. (Not to give things like "I don't like the color of the website" or "I don't like the font of the website" as they are subjective and not technical/UI-UX issues). Write how can you solve them/potential solutions.
 
