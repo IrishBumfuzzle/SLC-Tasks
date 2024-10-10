@@ -5,10 +5,10 @@
 
 The code for the script is in the file [Part A/main.py](Part%20A/main.py).
 
-Before running script, two variables have to be configures which is ```file_extension``` and ```file_type```. The first one is self explanatory, it takes the value of the file extension that is meant to be scraped (like ```.pdf```). <br>
+Before running script, two variables have to be configured which are ```file_extension``` and ```file_type```. The first one is self explanatory, it takes the value of the file extension that is meant to be scraped (like ```.pdf```). <br>
 The latter is the switch case for the two subtasks. Setting the value as ```all``` will scrape all file links and put in the ```urls.txt``` file, and value of ```office``` will only scrape files which are under an office in the intranet site and put them under their various office files.
 
-I ran the script beforehand and have uploaded the generated files also, which can be found under [Part A/Files/](Part%20A/Files/).
+I ran the script beforehand and also uploaded the generated files, which can be found under [Part A/Files/](Part%20A/Files/).
 
 ## Part C 
 > Go through the codebase of the events submdoule and try to make a flowchart of the event flow from the codebase - from event creation to getting completed. You can use any tool you are comfortable with (like draw.io, Lucidchart, etc.)
