@@ -18,3 +18,9 @@ Potential Fix - Some googling led me to find out that [next.js has an image opti
 ## Part 2
 
 > Go through the codebase of Clubs Council Website, and try to explain that how, in your opinion, the whole structure works. How there are different components, how they interact with each other, etc. (In a very basic way, you don't need to go into the details of the codebase)
+
+From what I could gather the [services repository](https://github.com/Clubs-Council-IIITH/services) is the master repository containing all submodules of the site. <br>
+The apis folder contains some private repos, from the name of the `auth` library, I assume it has something to do with CAS login. <br>
+The gateway module setups an Apollo GraphQL server to interact with the various submodules in `subraphs` folder. <br>
+There is an nginx folder which sets up a reverse proxy for the frontend (which is contained in `web` folder) to interact with the Apollo server. <br>
+The `subgraphs` folder has the vaious submodules made to retrieve or change data. All submodules have a common structure, the API is served using FastAPI, and uses the `strawberry` library to serve GraphQL requests. All the data changing functions are contained in `mutations.py` and data retrieving function are in the `queries.py`.
